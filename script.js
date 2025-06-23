@@ -12,5 +12,5 @@ function playSound() {
 window.onload = () => {
   showAmount();
   playSound();
-  setInterval(showAmount, 5000); // 更新金额
+  setInterval(showAmount, 5000); // 每5秒更新金额
 };
