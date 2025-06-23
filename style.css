@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -6,19 +7,19 @@ body {
   background-size: cover;
 }
 
-#jackpot {
+.jackpot {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 48px;
+  font-size: 36px;
+  font-weight: bold;
   color: gold;
   text-shadow: 2px 2px 10px red;
-  font-weight: bold;
-  animation: boom 0.3s ease-in-out infinite alternate;
+  animation: boom 1.5s ease-in-out;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 @keyframes boom {
-  0% { transform: translate(-50%, -50%) scale(1); }
-  100% { transform: translate(-50%, -50%) scale(1.1); }
+  0% { opacity: 0; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 0; transform: scale(1); }
 }
